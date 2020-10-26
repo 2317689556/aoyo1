@@ -10,6 +10,6 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-  <text>清空</text>
-傻逼
+  <text>清空追云2</text>
+
 </view>
