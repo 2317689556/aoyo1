@@ -10,7 +10,5 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-  <text>清空追云2</text>
-  <text>郝家乐</text>
-
+  <text>董马架架架</text>
 </view>
