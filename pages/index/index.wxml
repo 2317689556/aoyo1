@@ -10,10 +10,8 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-  <text>我是你爹啊</text>
+  <text>清空</text>
 
-  <text>都是儿子123213213123</text><text>都是儿子123213213123</text>
-  <text>222</text>
-<text>shabi</text>
+
   
 </view>
