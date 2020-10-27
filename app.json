@@ -88,6 +88,12 @@
           "text": "门店"
       },
       {
+        "pagePath": "pages/shop/index/index",
+        "iconPath": "/img/classify.png",
+        "selectedIconPath": "/img/classifyone.png",
+        "text": "分类"
+    },
+      {
           "pagePath": "pages/shopping/index/index",
           "iconPath": "/img/shopping.png",
           "selectedIconPath": "/img/shoppingone.png",
