@@ -1,7 +1,68 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/index/bootPage/bootPage",
+        "pages/my/discounts/discounts",
+        "pages/index/regulations/regulations",
+        "pages/index/index/index",
+        "pages/my/index/index",
+        "pages/my/serviceLog/serviceLog",
+        "pages/my/map/map",
+        "pages/my/workList/workList",
+        "pages/my/uploadImgVideo/uploadImgVideo",
+        "pages/my/bindingPhone/bindingPhone",
+        "pages/my/login/login",
+        "pages/my/offlineOrders/offlineOrders",
+        "pages/shopping/appointment/appointment",
+        "pages/my/evaluate/evaluate",
+        "pages/my/CustomsDtation/CustomsDtation",
+        "pages/shopping/nonPayment/nonPayment",
+        "pages/index/shoppDetail/index",
+        "pages/shop/index/index",
+        "pages/shopping/index/index",
+        "pages/my/information/information",
+        "pages/my/loveCar/loveCar",
+        "pages/index/addCarType/addCarType",
+        "pages/index/city/city",
+        "pages/my/orderList/orderList",
+        "pages/index/moreComment/index",
+        "pages/my/authentication/authentication",
+        "pages/index/displacement/displacement",
+        "pages/my/insuranceCompany/insuranceCompany",
+        "pages/index/proYear/proYear",
+        "pages/index/carType/carType",
+        "pages/shop/shopDetail/shopDetail",
+        "pages/index/search/index",
+        "pages/shop/shopCommodity/shopCommodity",
+        "pages/shopping/shoppOrder/shoppOrder",
+        "pages/shopping/newAddress/newAddress",
+        "pages/shopping/failure/failure",
+        "pages/shopping/payment/payment",
+        "pages/shopping/delivery/delivery",
+        "pages/my/carport/carport",
+        "pages/my/attention/attention",
+        "pages/my/logistics/logistics",
+        "pages/my/editName/editName",
+        "pages/my/realName/realName",
+        "pages/my/editIphone/editIphone",
+        "pages/my/displace/displace",
+        "pages/my/carYear/carYear",
+        "pages/my/nameAuthentication/nameAuthentication",
+        "pages/my/carLType/carLType",
+        "pages/index/queryViolation/queryViolation",
+        "pages/index/platingCrystal/platingCrystal",
+        "pages/index/upkeep/upkeep",
+        "pages/index/tyreChange/tyreChange",
+        "pages/index/padpasting/padpasting",
+        "pages/shopping/receiver/receiver",
+        "pages/my/codeSheet/codeSheet",
+        "pages/my/writing/writing",
+        "pages/my/sheetCustoms/sheetCustoms",
+        "pages/my/agreement/agreement",
+        "pages/my/serviceLogS/serviceLogS",
+        "pages/my/workCar/workCar",
+        "commpents/share/share",
+        "pages/index/shoppList/shoppList",
+        "pages/index/receiveCoupon/receiveCoupon"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -9,6 +70,41 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
+
+  "tabBar": {
+    "color": "#8E8E93",
+    "selestedColor":"#8E8E93",
+    "list": [
+      {
+        "pagePath": "pages/index/index/index",
+        "iconPath": "/img/index.png",
+        "selectedIconPath": "/img/indexone.png",
+        "text": "首页"
+      },
+      {
+          "pagePath": "pages/shop/index/index",
+          "iconPath": "/img/shop.png",
+          "selectedIconPath": "/img/shopoone.png",
+          "text": "门店"
+      },
+      {
+          "pagePath": "pages/shopping/index/index",
+          "iconPath": "/img/shopping.png",
+          "selectedIconPath": "/img/shoppingone.png",
+          "text": "购物车"
+      },
+      {
+          "pagePath": "pages/my/index/index",
+          "iconPath": "/img/my.png",
+          "selectedIconPath": "/img/myone.png",
+          "text": "我的"
+      }
+    ]
+
+},
+
   "style": "v2",
   "sitemapLocation": "sitemap.json"
+
+ 
 }

@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '董马架架架',
+    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
