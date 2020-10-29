@@ -76,7 +76,7 @@
 
   "tabBar": {
     "color": "#8E8E93",
-    "selestedColor":"#8E8E93",
+    "selectedColor": "#8E8E93",
     "list": [
       {
         "pagePath": "pages/index/index/index",
@@ -90,6 +90,12 @@
           "selectedIconPath": "/img/shopoone.png",
           "text": "门店"
       },
+      {
+        "pagePath": "pages/shop/index/index",
+        "iconPath": "/img/classify.png",
+        "selectedIconPath": "/img/classifyone.png",
+        "text": "分类"
+    },
       {
           "pagePath": "pages/shopping/index/index",
           "iconPath": "/img/shopping.png",
