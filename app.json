@@ -1,6 +1,8 @@
 {
   "pages":[
-    "pages/index/bootPage/bootPage",
+    "pages/shopping/newAddress/newAddress",
+      "pages/index/bootPage/bootPage",
+    
         "pages/my/discounts/discounts",
         "pages/index/regulations/regulations",
         "pages/index/index/index",
@@ -22,6 +24,7 @@
         "pages/my/information/information",
         "pages/my/loveCar/loveCar",
         "pages/index/addCarType/addCarType",
+      
         "pages/index/city/city",
         "pages/my/orderList/orderList",
         "pages/index/moreComment/index",
@@ -34,7 +37,7 @@
         "pages/index/search/index",
         "pages/shop/shopCommodity/shopCommodity",
         "pages/shopping/shoppOrder/shoppOrder",
-        "pages/shopping/newAddress/newAddress",
+    
         "pages/shopping/failure/failure",
         "pages/shopping/payment/payment",
         "pages/shopping/delivery/delivery",
