@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/shopping/newAddress/newAddress",
+    
       "pages/index/bootPage/bootPage",
+      "pages/shopping/newAddress/newAddress",
     
         "pages/my/discounts/discounts",
         "pages/index/regulations/regulations",
