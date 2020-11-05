@@ -1,13 +1,13 @@
 //请求路径
 // const baseUrl = "https://api.aoyosh.com/";
-const baseUrl = "https://test-api.miyouzhiyun.com/";
+const baseUrl = "http://localhost:8080/";
 
 //图片路径
 // const imagePrefix = "https://biz.aoyosh.com/";
 const imagePrefix = "";
 
 //首页
-var indexTypeUrl = baseUrl + "functionIconDriver/getFunctionButtonList";//首页类型
+var indexTypeUrl = baseUrl + "user/huodong";//首页类型
 var indexSweiper = baseUrl + "platformDriver/getCarouselList";//首页轮播图
 var tellUrl = baseUrl + 'serviceDriver/getServiceUserList';//客服电话
 var likeShoppUrl = baseUrl + 'customBrowseDriver/queryBrowse';//猜你喜欢
@@ -26,19 +26,22 @@ var searchCity = baseUrl + 'cityLocationDriver/getcityLocationByName';//模糊�
 var getCustomCarwhetherIs = baseUrl + 'carManageDriver/getCustomCarwhetherIs';//查询默认车辆
 var CustomCollection = baseUrl + 'customCollectionDriver/addCustomCollection';//关注商品
 var getCarIllegal = baseUrl + 'car/illegal/getCarIllegal';//查询违章
-var querySuitDetail = baseUrl + 'suitAPPDriver/querySuitDetail';//套餐查询
+var querySuitDetail = baseUrl + 'user/taocan';//保养套餐查询
 var upLocation = baseUrl + 'location/upLocation';//实时上传地理位置
 var getCommentByCommoditId = baseUrl + 'comment/getCommentByCommoditId';//查询评论列表
 var getCommodityToMongoJSON = baseUrl + 'commodityDriver/getCommodityToMongoJSON';//获取商品介绍
-var getCommodityIconPlate = baseUrl + 'commodityPanelDriver/getCommodityPanel';//查询首页商品分类
-var getCustomAllowReceiveCouponList = baseUrl + 'coupon/getCustomAllowReceiveCouponList';//查询可领取的优惠劵
+var getCommodityIconPlate = baseUrl + 'user/fenlei';//查询首页商品分类
+var getCustomAllowReceiveCouponList = baseUrl + 'user/youhuiquan';//查询可领取的优惠劵
 var receiveCoupon = baseUrl + 'coupon/receiveCoupon';//领取优惠劵
 
 
+
+
 //车辆
-var getHotCar = baseUrl + 'carBrandHotDriver/getCarBrandHotList';//查询热门车辆品牌
+var searchCar = baseUrl + 'carBrand/searchCarList'//搜索框查询车辆
+var getHotCar = baseUrl + 'carBrand/getHotCarList';//查询热门车辆品牌
 var getSearcchCar = baseUrl + 'carBrandHotDriver/getCarSeriesByName';//搜索车辆品牌
-var getCarList = baseUrl + 'carBrand/getCarBrandParentList';//查询车辆品牌
+var getCarList = baseUrl + 'carBrand/getCarList';//查询车辆品牌
 var addHotCar = baseUrl + 'carBrandHotDriver/saveCarBrandHot';//添加车辆热门品牌
 var addCarSubset = baseUrl + 'carBrand/getCarBrandList';//添加车辆子集品牌
 var getCarEngineCapacity = baseUrl + 'carBrand/getCarEngineCapacity';//查询发动排量
@@ -67,7 +70,7 @@ var queryGroupAppointmentRules = baseUrl + 'customAppointmentDriver/queryGroupAp
 var addCustomAppointment = baseUrl + 'customAppointmentOrderDriver/addCustomAppointment';//预约
 
 //购物车
-var shoppCardList = baseUrl + 'customShoppingCarDriver/queryShoppingCar';//查询购物车商品
+var shoppCardList = baseUrl + 'user/goshopping';//查询购物车商品
 var addAndDel = baseUrl + 'customShoppingCarDriver/updateShoppingCar';//加、减商品
 var addressList = baseUrl + 'customAddressDriver/queryCustomAddress';//收货地址查询
 var addressAdd = baseUrl + 'customAddressDriver/addCustomAddress';//收货地址添加

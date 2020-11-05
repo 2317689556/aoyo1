@@ -1,2 +1,22 @@
 <!--pages/my/agreement/agreement.wxml-->
-<text>pages/my/agreement/agreement.wxml</text>
+<view>
+	<!-- 自定义导航栏 start -->
+	<view class="nav-bar" style="height:{{navBarHeight}}px;">
+		<view class="back" style="height:{{menuHeight}}px; min-height:{{menuHeight}}px; line-height:{{menuHeight}}px; bottom:{{menuBotton}}px;">
+			<view class="backBu">
+				<view style="width:120rpx"></view>
+				<text>用户协议</text>
+				<view style="width:120rpx"></view>
+			</view>
+		</view>
+	</view>
+	<view class="content" style="margin-top:{{navBarHeight}}px">
+		<view class="content_con">
+			<rich-text style="color:#9E9E9E;margin-top:10rpx" nodes="{{html}}"></rich-text>
+		</view>
+		<view class="footer">
+			<view bindtap="cancal">取消</view>
+			<view bindtap="goLogin">接受</view>
+		</view>
+	</view>
+</view>

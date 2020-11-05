@@ -1,1 +1,90 @@
 /* pages/my/agreement/agreement.wxss */
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  background-color: #FFFFFF;
+}
+
+.back-content {
+  width: 120rpx;
+  border: 1px solid rgb(226, 220, 220);
+  padding: 10rpx 0;
+  border-radius: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar .back {
+  width: 100%;
+  position: absolute;
+}
+
+.nav-bar .back .backBu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10rpx 0 20rpx;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.nav-bar .back view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar .back image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+  overflow-x: hidden;
+}
+
+.content {
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.content_con {
+  width: 100%;
+  height: 100%;
+  background-color: #ffff;
+  box-shadow: 0px 18rpx 42rpx 0px rgba(91, 91, 91, 0.11);
+  border-radius: 40rpx;
+  padding: 25rpx;
+  box-sizing: border-box;
+  margin-bottom: 30rpx;
+}
+
+.footer {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  margin-bottom: 50rpx;
+}
+
+.footer view {
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(90deg, #FF8C65 0%, #FF5944 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26rpx;
+  border-radius: 20rpx;
+
+}
