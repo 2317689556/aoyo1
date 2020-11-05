@@ -62,5 +62,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  goAdd:function(){
+
+    wx.redirectTo ({
+      url:"/pages/shopping/newAddress/newAddress"
+    })
+   
+
   }
 })

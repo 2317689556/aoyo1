@@ -1,2 +1,94 @@
-<!--pages/shopping/newAddress/newAddress.wxml-->
-<text>pages/shopping/newAddress/newAddress.wxml</text>
+<view>
+	<!-- 自定义导航栏 start -->
+	<view class="nav-bar" style="height:{{navBarHeight}}px;">
+		<view class="back" style="height:{{menuHeight}}px; min-height:{{menuHeight}}px; line-height:{{menuHeight}}px;  bottom:{{menuBotton}}px;" bindtap="backHome">
+			<view class="backBu">
+				<view class="back-content">
+					<view style="width:40%" bindtap="backlist">
+						<van-icon name="arrow-left" />
+					</view>
+					<view style="width:20%">
+						<image src="../../../img/line.png"></image>
+					</view>
+					<view style="width:40%" bindtap="backHome">
+						<van-icon name="home-o" />
+					</view>
+				</view>
+				<view style="width:120rpx"></view>
+			</view>
+		</view>
+	</view>
+	<!-- 自定义导航栏 end -->
+	<!-- 内容 -->
+	<view class="content" style="margin-top:{{navBarHeight}}px">
+		<form catchsubmit="formSubmit" class="formB">
+			<view class="form-t">
+				<view class="form-name">
+					<view class="label">收货人</view>
+					<view class="content"><input name="consigneeName" placeholder="请填写收货人姓名"></input></view>
+				</view>
+				<view class="form-phone">
+					<view class="label">手机号</view>
+					<view class="content"><input type="number" name="telephone" placeholder="请填写收货人手机号"></input></view>
+				</view>
+				<view class="form-region">
+					<view class="label">所在地区</view>
+					<view class="content">
+						<input disabled wx:if="{{region.length<1}}" placeholder="省市区县、乡镇等" bindtap="pickAddress"></input>
+						<input bindtap="pickAddress"  disabled wx:else value="{{region}}" class="item-content arrow {{region ? '' : 'item-content_shadow'  }}"></input>
+					</view>
+					<pop-up visible="{{visible}}" onClose="closePopUp">
+						<view slot="content">
+							<view class="picker-view">
+								<view class="picker-view__pane">
+									<text catchtap="cityCancel">取消</text>
+									<text>选择所在地区</text>
+									<text catchtap="citySure">确定</text>
+								</view>
+								<picker-view class="pick-view__group" bindchange="cityChange" bindpickstart="chooseStart" bindpickend="chooseEnd" value="{{value}}">
+									<picker-view-column indicator-class="item_active" style="margin-top:-100rpx">
+										<view wx:for="{{provinces}}" class="picker-item" wx:key="index" value=" {{item.code}}">{{item.name}} </view>
+									</picker-view-column>
+									<picker-view-column style="margin-top:-100rpx">
+										<view wx:for="{{citys}}" class="picker-item" wx:key="index">{{item.name}}</view>
+									</picker-view-column>
+									<picker-view-column style="margin-top:-100rpx">
+										<view wx:for="{{areas}}" class="picker-item" wx:key="index">{{item.name}}</view>
+									</picker-view-column>
+								</picker-view>
+							</view>
+						</view>
+					</pop-up>
+				</view>
+				<view class="form-detail">
+					<view class="label">详细地址</view>
+					<view class="content"><input name="addressDetails" name="addressDetails" placeholder="街道、楼牌号"></input></view>
+				</view>
+			</view>
+			<view class="line"></view>
+			<view class="form-B">
+				<view class="form-B_t">
+					<view class="form-B_t_L">标签</view>
+					<view class="form-B_t_R">
+						<text class="{{curNav==item.labelId?'active':''}}" bindtap="selectD" name="labelId" wx:for="{{tag}}" wx:key="key" data-index="{{index}}" data-id="{{item.labelId}}">{{item.labelName}}</text>
+						<view>
+							<image src="../../../img/jia.png"></image>
+						</view>
+					</view>
+				</view>
+				<view class="form-B_m">
+					<view class="form-B_m_T">
+						<view>设置默认地址</view>
+						<view>提示：每次下单会默认推荐使用该地址</view>
+					</view>
+					<view>
+						<switch name="xx" bindchange="switch1Change" />
+					</view>
+				</view>
+				<view class="form-B_b"></view>
+			</view>
+			<button class="weui-btn" type="primary" form-type="submit">保存</button>
+		</form>
+		
+	</view>
+</view>
